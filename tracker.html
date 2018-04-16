@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="tracker-style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron container" id='j'>
+        <h1 class="display-4">Employee Tracker</h1>
+        <hr class="my-4">
+    </div>
+    <div class='jumbotron container' id='employees'>
+        <table class='table' id='employeeTable'>
+            <thead>
+                <tr>
+                    <th scope='col'>Employee</th>
+                    <th scope='col'>Position</th>
+                    <th scope='col'>Start Date</th>
+                    <th scope='col'>Salary</th>
+                    <th scope='col'>Employed</th>
+                    <th scope='col'>Total Wages</th>
+                </tr>
+            </thead>
+            <tbody id='tBody'>
+
+            </tbody>
+        </table>
+    </div>
+    <div class='jumbotron container' id='form-container'>
+        <form>
+            <div class='form-group'>
+                <label for='name'>Name</label>
+                <input type="text" class='form-control' id='name' placeholder='First and Last'>
+            </div>
+            <div class='form-group'>
+                <label for='role'>Position</label>
+                <input type="text" class='form-control' id='role' placeholder=''>
+            </div>
+            <div class='form-group'>
+                <label for='start'>Start Date</label>
+                <input type='text' class='form-control' id='start' placeholder='M/D/YYYY' >
+            </div>
+            <div class='form-group'>
+                <label for='rate'>Monthly Rate</label>
+                <input type='text' class='form-control' id='rate'>
+            </div>
+            <button type='submit' class='btn btn-primary' id='pushNew'>Submit</button>
+        </form>
+    </div>
+
+    <script type='text/javascript' src='tracker-logic.js'></script>
+    
+</body>
+</html>

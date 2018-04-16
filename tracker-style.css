@@ -1,0 +1,64 @@
+body    {
+    background-color: rgb(81, 104, 133);
+}
+.jumbotron  {
+    margin-bottom: 0;
+    /* background-color: rgb(65, 68, 65); */
+}
+.container {
+    width: 80vw;
+    margin-top: 1rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 1.5rem;
+}
+#employees  {
+    background-color: rgb(212, 212, 212);
+}
+#form-container {
+    background-color: rgb(212, 212, 212);
+}
+.table  {
+    background-color: rgb(255, 255, 255);
+}
+th  {
+    text-align: center
+}
+td  {
+    text-align: center
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 98vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}
+@media (min-width: 768px) { 
+    .container {
+        width: 90vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 80vw;
+        margin-left: 20vw;
+        margin-right: 20vw;;
+    } 
+}
+@media (min-width: 1200px) { 
+    .container {
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    } 
+}
+
+
+
+
+
